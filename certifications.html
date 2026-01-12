@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<title>Certifications | Muhammad Talha</title>
+<meta name="description" content="Certifications and badges supporting SOC operations, defensive security, and purple-team understanding.">
+<link rel="canonical" href="https://infosectalha.github.io/certifications.html">
+</head>
+<body>
+<canvas id="radarCanvas" aria-hidden="true"></canvas>
+<div class="bg-grid" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span class="brand-text">info<span class="brand-accent">sec</span>talha</span></a>
+    <nav aria-label="Primary navigation">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a class="btn btn-sm" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <ul>
+      <li><a class="mobile-link" href="index.html">Home</a></li>
+      <li><a class="mobile-link" href="projects.html">Projects</a></li>
+      <li><a class="mobile-link" href="certifications.html">Certifications</a></li>
+      <li><a class="mobile-link" href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container fade-in">
+      <h1>Certifications & Badges</h1>
+      <p class="muted">Curated for SOC relevance. Offensive learning is shown to demonstrate defensive understanding (purple mindset).</p>
+
+      <h2>Priority: SOC & Defensive</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Cyber Sentinel Program</h3>
+          <p class="muted">Tech Hierarchy • 29 Dec 2025</p>
+          <div class="cta">
+            <a class="btn btn-sm" href="assets/documents/tech_hierarchy_cyber_sentinel_program_2025.jpg" target="_blank" rel="noopener">Open Certificate</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>SOC Analyst Internship Certificate</h3>
+          <p class="muted">Cyborts</p>
+          <p class="muted">Evidence aligned with Wazuh SIEM deployment and alert triage.</p>
+        </div>
+        <div class="card">
+          <h3>Linux Fundamentals 100</h3>
+          <p class="muted">TCM Security</p>
+          <p class="muted">Linux command-line fundamentals supporting SOC tooling and investigations.</p>
+        </div>
+      </div>
+
+      <h2>Purple Depth: VAPT & Web Security</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>VAPT</h3><p class="muted">Udemy</p></div>
+        <div class="card"><h3>Mastering Vulnerability Assessment</h3><p class="muted">Tech Hierarchy</p></div>
+        <div class="card"><h3>Windows Password Cracking & Recovery</h3><p class="muted">Udemy (Lab)</p></div>
+      </div>
+
+      <h2>Supporting Skills</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Critical Infrastructure Protection</h3><p class="muted">OPSWAT</p></div>
+        <div class="card"><h3>Fundamentals of Dark Web</h3><p class="muted">SOCRadar</p></div>
+        <div class="card"><h3>Data Analytics / Python Basics</h3><p class="muted">Uniathena</p></div>
+      </div>
+
+      <p class="muted" style="margin-top:18px">
+        Note: Additional participation badges and soft-skill certificates are intentionally de-emphasised to keep the portfolio focused for SOC hiring pipelines.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="muted">© <span id="year"></span> Muhammad Talha</p>
+    <p class="muted mono">Curated for SOC signal</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

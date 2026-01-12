@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<title>Projects | Muhammad Talha (SOC / Purple Team)</title>
+<meta name="description" content="Security projects by Muhammad Talha: MITRE ATT&CK mapping, web application VAPT labs, cryptography labs, and Nessus-based network assessment.">
+<link rel="canonical" href="https://infosectalha.github.io/projects.html">
+</head>
+<body>
+<canvas id="radarCanvas" aria-hidden="true"></canvas>
+<div class="bg-grid" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark"></span><span class="brand-text">info<span class="brand-accent">sec</span>talha</span></a>
+    <nav aria-label="Primary navigation">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a class="btn btn-sm" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <ul>
+      <li><a class="mobile-link" href="index.html">Home</a></li>
+      <li><a class="mobile-link" href="projects.html">Projects</a></li>
+      <li><a class="mobile-link" href="certifications.html">Certifications</a></li>
+      <li><a class="mobile-link" href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container fade-in">
+      <h1>Projects</h1>
+      <p class="muted">All testing was performed in controlled lab environments. Offensive work is presented to demonstrate defensive understanding (purple mindset).</p>
+
+      <div class="grid grid-2">
+        <article class="card project-card">
+          <div class="topline">
+            <span class="badge">MITRE ATT&CK</span>
+            <span class="badge badge-alert">Detection & Mitigation</span>
+          </div>
+          <h3>Simulation & Analysis using MITRE ATT&CK</h3>
+          <p class="muted">Mapped TTPs across three organizational scenarios and proposed detection/mitigation strategies aligned with SIEM and EDR concepts.</p>
+          <div class="cta">
+            <a class="btn btn-sm" href="assets/documents/mitre.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="topline">
+            <span class="badge">Web Security (Lab)</span>
+            <span class="badge badge-alert">OWASP</span>
+          </div>
+          <h3>OWASP Juice Shop VAPT</h3>
+          <p class="muted">Validated authentication weaknesses and injection risks, documenting findings and recommendations for secure remediation.</p>
+          <div class="cta">
+            <a class="btn btn-sm" href="assets/documents/juiceshop.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="topline">
+            <span class="badge">Web Security (Lab)</span>
+            <span class="badge badge-alert">DVWA</span>
+          </div>
+          <h3>DVWA Assessment</h3>
+          <p class="muted">Recon + manual validation using Nmap/WhatWeb/Gobuster/Nikto and DVWA verification across common web weaknesses.</p>
+          <div class="cta">
+            <a class="btn btn-sm" href="assets/documents/dvwa.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="topline">
+            <span class="badge">Web Security (Lab)</span>
+            <span class="badge badge-alert">bWAPP</span>
+          </div>
+          <h3>bWAPP Manual Testing</h3>
+          <p class="muted">Manually verified HTML injection, SQLi, and OS command injection with documented payloads and remediation guidance.</p>
+          <div class="cta">
+            <a class="btn btn-sm" href="assets/documents/bwapp.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="topline">
+            <span class="badge">Crypto</span>
+            <span class="badge badge-alert">Docker Lab</span>
+          </div>
+          <h3>Crypto & Secret Retrieval via Docker</h3>
+          <p class="muted">Decoded Base64/XOR, handled RSA key material, and retrieved container secrets to demonstrate secure key/secret practices.</p>
+          <div class="cta">
+            <a class="btn btn-sm" href="assets/documents/docker.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="topline">
+            <span class="badge">Network VAPT (Lab)</span>
+            <span class="badge badge-alert">Nessus</span>
+          </div>
+          <h3>Metasploitable Vulnerability Audit</h3>
+          <p class="muted">Ran Nessus Essentials scan and summarized severities and key critical findings with hardening recommendations.</p>
+          <div class="cta">
+            <a class="btn btn-sm" href="assets/documents/metasploitable.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="muted">© <span id="year"></span> Muhammad Talha</p>
+    <p class="muted mono">Evidence-led labs • defensive framing</p>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
